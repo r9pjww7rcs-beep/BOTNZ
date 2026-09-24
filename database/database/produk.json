@@ -1,1 +1,61 @@
-[]
+[
+  {
+    "id": "001",
+    "nama": "Canva",
+    "kategori": "Editing",
+    "status": "Ready",
+    "paket": [
+      {
+        "nama": "3 Hari Member",
+        "harga": "Rp1.300"
+      },
+      {
+        "nama": "7 Hari Member",
+        "harga": "Rp3.000"
+      },
+      {
+        "nama": "1 Bulan Member",
+        "harga": "Rp500"
+      },
+      {
+        "nama": "Owner 1 Bulan",
+        "harga": "Rp7.000"
+      }
+    ],
+    "keterangan": [
+      "Member / Owner sesuai paket",
+      "Member menggunakan email sendiri",
+      "Owner dapat mengundang member"
+    ]
+  },
+
+  {
+    "id": "002",
+    "nama": "Netflix",
+    "kategori": "Streaming",
+    "status": "Ready",
+    "paket": [
+      {
+        "nama": "1P 2U",
+        "harga": "Rp17.000"
+      },
+      {
+        "nama": "1P 1U",
+        "harga": "Rp32.000"
+      },
+      {
+        "nama": "Anti Limit",
+        "harga": "Rp39.500"
+      },
+      {
+        "nama": "Semi Priv",
+        "harga": "Rp39.500"
+      }
+    ],
+    "keterangan": [
+      "Support Smartphone, Tablet, Laptop, Smart TV",
+      "All Device",
+      "Durasi sesuai varian"
+    ]
+  }
+]
