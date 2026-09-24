@@ -3,7 +3,7 @@ const config = require("../config");
 const welcome = require("../features/welcome");
 const menu = require("../features/menu");
 const reseller = require("../features/reseller");
-
+const katalog = require("../features/katalog");
 
 async function messageHandler(sock, msg){
 
@@ -59,7 +59,35 @@ async function messageHandler(sock, msg){
 
         return;
     }
+// DAFTAR PRODUK
+if(command === "produk"){
 
+    await katalog.list(
+        sock,
+        from
+    );
+
+    return;
+}
+
+
+// DETAIL PRODUK
+if(command.startsWith("cari ")){
+
+    let nama =
+    command.replace(
+        "cari ",
+        ""
+    );
+
+    await katalog.detail(
+        sock,
+        from,
+        nama
+    );
+
+    return;
+}
 
     // DEFAULT
     await sock.sendMessage(
